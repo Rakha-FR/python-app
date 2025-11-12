@@ -16,7 +16,6 @@ def init_db():
     conn = get_db_connection()
     cur = conn.cursor()
     
-    # Membuat tabel murid
     cur.execute("""
         CREATE TABLE IF NOT EXISTS murid (
             id SERIAL PRIMARY KEY,
